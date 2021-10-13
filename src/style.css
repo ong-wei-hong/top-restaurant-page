@@ -1,0 +1,162 @@
+/* reset.css */
+
+/* http://meyerweb.com/eric/tools/css/reset/
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/* settings, helpers */
+* {
+  -webkit-box-sizing: border-box;
+     -moz-box-sizing: border-box;
+          box-sizing: border-box;
+
+  font-family: Helvetica, sans-serif;
+}
+
+body {
+    margin: 0 auto;
+}
+
+.wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  min-height: 90vh;
+}
+
+.title {
+  color: #FFF;
+
+  padding: 1em;
+  background-color: rgba(0, 0, 0, 0.5);
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+
+  text-align: center;
+}
+
+.title > *{
+  margin-top: 0.5em;
+}
+
+/* background */
+
+html {
+  background: url('./background.jpg') no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+
+/* header */
+header {
+  display: flex;
+  justify-content: flex-end;
+  flex-wrap: wrap;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+header > * {
+  margin: 5px;
+  color: #FFF;
+  padding: 5px;
+}
+
+header > *:hover {
+  cursor: pointer
+}
+
+/* homepage */
+
+.name {
+  font-weight: bold;
+  font-size: 3em;
+  margin-top: 0;
+}
+
+.review {
+  font-style: italic;
+  font-size: 1.2em;
+}
+
+/* menu */
+
+.menu-section {
+  font-weight: bold;
+  margin-top: 1.5em
+}
+
+.first-header {
+  margin-top: 0;
+}
+
+.food-name {
+  margin-top: 1em;
+  font-style: italic;
+}
+
+/* contact */
+
+.reserve {
+  font-size: 1.5em;
+  font-weight: bold;
+  margin-top: 0;
+}
+
+.contact-header {
+  margin-top: 1em;
+  font-style: italic;
+}
+
+.mailto {
+  color: #FFF
+}
